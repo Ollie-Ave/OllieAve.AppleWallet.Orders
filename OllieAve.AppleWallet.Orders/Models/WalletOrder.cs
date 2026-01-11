@@ -15,7 +15,7 @@ public record WalletOrder
     public required WalletPayment Payment { get; init; }
     public required List<WalletItem> LineItems { get; init; }
     public required string OrderManagementURL { get; init; }
-    public required string WebServiceURL { get; init; }
-    public required string AuthenticationToken { get; init; }
+    public string? WebServiceURL { get; init; }
+    public string? AuthenticationToken { get; init; }
 
 }

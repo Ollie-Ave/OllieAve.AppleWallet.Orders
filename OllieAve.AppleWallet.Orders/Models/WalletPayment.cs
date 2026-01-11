@@ -2,7 +2,7 @@ namespace OllieAve.AppleWallet.Orders.Models;
 
 public record WalletPayment
 {
-    public required AppleWalletAmmount Total { get; init; }
+    public required WalletAmmount Total { get; init; }
     public required string Status { get; init; }
-    public required List<AppleWalletSummaryItem> SummaryItems { get; init; }
+    public List<WalletSummaryItem>? SummaryItems { get; init; }
 }

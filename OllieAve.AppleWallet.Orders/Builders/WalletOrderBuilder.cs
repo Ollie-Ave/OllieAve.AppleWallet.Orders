@@ -96,7 +96,7 @@ public class WalletOrderBuilder : IWalletOrderBuilder
 
     public IWalletOrderBuilder SetSigningCertificate(X509Certificate2 certificate)
     {
-        this.certificate = null;
+        this.certificate = certificate;
 
         return this;
     }
